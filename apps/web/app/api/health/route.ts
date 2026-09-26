@@ -5,7 +5,7 @@ export function GET() {
   const response: HealthResponse = {
     ok: true,
     service: "novaai-web",
-    version: "0.1.0"
+    version: "0.3.0"
   };
 
   return NextResponse.json(response);
