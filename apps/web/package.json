@@ -1,6 +1,30 @@
 {
-  "name":"@novaai/web","version":"0.2.0","private":true,
-  "scripts":{"dev":"next dev","build":"next build","typecheck":"tsc --noEmit"},
-  "dependencies":{"@novaai/types":"workspace:*","next":"^15.5.0","openai":"^5.0.0","react":"^19.1.0","react-dom":"^19.1.0"},
-  "devDependencies":{"@types/node":"^22.0.0","@types/react":"^19.0.0","@types/react-dom":"^19.0.0","typescript":"^5.0.0"}
+  "name": "@novaai/web",
+  "version": "0.3.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "next dev",
+    "build": "prisma generate --config ../../prisma.config.ts && next build",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@novaai/types": "workspace:*",
+    "@prisma/client": "^7.0.0",
+    "@prisma/adapter-pg": "^7.0.0",
+    "dotenv": "^17.0.0",
+    "next": "^15.5.0",
+    "openai": "^5.0.0",
+    "pg": "^8.16.0",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "@types/pg": "^8.15.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "prisma": "^7.0.0",
+    "typescript": "^5.0.0"
+  }
 }
