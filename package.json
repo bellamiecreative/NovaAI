@@ -1,0 +1,12 @@
+{
+  "name": "novaai",
+  "private": true,
+  "version": "0.1.0",
+  "description": "NovaAI — a mobile-first AI assistant platform.",
+  "packageManager": "pnpm@10.12.4",
+  "scripts": {
+    "dev:web": "pnpm --dir apps/web dev",
+    "build:web": "pnpm --dir apps/web build",
+    "typecheck:web": "pnpm --dir apps/web typecheck"
+  }
+}
