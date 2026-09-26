@@ -16,7 +16,7 @@ export default function HomePage() {
           NovaAI is being built as a fast, mobile-first AI workspace for chat,
           creation, memory, and voice.
         </p>
-        <a className="cta" href="#features">Explore NovaAI <span>→</span></a>
+        <a className="cta" href="/chat">Open NovaAI Chat <span>→</span></a>
       </section>
 
       <section id="features" className="grid">
@@ -29,7 +29,7 @@ export default function HomePage() {
         ))}
       </section>
 
-      <footer>NovaAI · v0.1.0 · Foundation</footer>
+      <footer>NovaAI · v0.3.0 · Phase 3</footer>
     </main>
   );
 }
