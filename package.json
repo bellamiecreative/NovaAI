@@ -1,12 +1,16 @@
 {
   "name": "novaai",
   "private": true,
-  "version": "0.1.0",
+  "version": "0.3.0",
   "description": "NovaAI — a mobile-first AI assistant platform.",
   "packageManager": "pnpm@10.12.4",
+  "type": "module",
   "scripts": {
     "dev:web": "pnpm --dir apps/web dev",
     "build:web": "pnpm --dir apps/web build",
-    "typecheck:web": "pnpm --dir apps/web typecheck"
-  }
+    "typecheck:web": "pnpm --dir apps/web typecheck",
+    "db:generate": "prisma generate --config prisma.config.ts",
+    "db:migrate": "prisma migrate dev --config prisma.config.ts"
+  },
+  "devDependencies": { "prisma": "^7.0.0", "dotenv": "^17.0.0" }
 }
